@@ -1,0 +1,270 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #0F0F0F;
+    background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
+    background-position: top center;
+    margin: auto;
+    padding: auto;
+    font-family: Montserrat;
+width: 100%;
+}
+
+
+
+button,
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+/* justify-content: space-between; */
+gap: 35%;
+/* margin: 0% 10% 0% 10%; */
+position: fixed;
+background-color: #0F0F0F;
+width: 100%;
+}
+
+header p{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    opacity: 0.5;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight:200;
+
+    padding-left: 3rem;
+}
+
+
+
+.icon {
+    display: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+ol{
+    color: aqua;
+    list-style-type: none;
+    /* display: flex; */
+
+}
+li{
+display: flex;
+gap:10%;
+font-weight: 600;
+
+}
+.nav {
+    display: flex;
+    gap: 80px;
+}
+
+
+
+.hamburger{
+    display: none;
+
+}
+nav {
+    display: flex;
+    /* gap: 3px; */
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+/* main */
+main{
+    /* width: 50%; */
+    margin: 0% 10% 10% 10%;
+    padding-top: 15%;
+    color: rgb(179, 176, 176);
+   
+}
+
+
+.first h2, h1{
+
+line-height: 10px;
+    }
+.first h2{
+    font-size: 30px;
+}
+    .first h1{
+        font-size: 70px;
+        color: white;
+    }
+
+.first p{
+    line-height: 25px;
+    /* letter-spacing: 1px; */
+    /* width: 80%; */
+   
+}
+
+.first button{
+    background-color: #118080;
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 17px;
+ height: 3rem; 
+ margin-top: 30px; 
+}
+
+.first button:hover{
+    background-color: black;
+    border:  1px solid #118080;
+    color: #118080;
+}
+
+
+/* works */
+.works{
+    width: auto;
+}
+.second{
+    display: flex;
+}
+.second p{
+    color: white;
+    font-size: 40px;
+    font-family: 'halant';
+    font-weight: 600;
+
+}
+
+.second hr{
+    margin-top: 7%;
+border: 1px solid aqua;
+width: 70%;
+height: 1px;
+margin-left: 3%;
+}
+
+
+
+/* Worl1 */
+
+.flex{
+ 
+    gap: 40px;
+
+    border-radius: 5px;
+    border: 1px solid aqua;
+    background-color: black;
+    background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
+background-repeat: no-repeat;
+background-size: cover;
+    padding: 5px 5px 5px 5px;
+width: 100%;
+margin-bottom: 30px;
+}
+
+.home {
+ color:white;
+
+ padding: 20px;
+ margin: 30px;
+ border-radius: 5px;
+ border: 1px solid aqua;
+ width: 50%;
+}
+.home button{
+  
+    background-color: black;
+    border:  1px solid #118080;
+    width: 20%;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    font-size: 17px;
+ height: 3rem; 
+ width: 50%;
+ margin-top: 30px; 
+}
+
+.home button:hover{
+    background-color: #118080;
+    color: white;
+}
+
+.home p{
+    line-height: 25px;
+    
+}
+.home h2{
+    line-height: 40px;
+}
+/* FOOTER */
+footer{
+    background-color: #0F0F0F;
+    height: 20rem;
+}
+.subfooter{
+    margin: 0% 10% 0% 10%;
+    color: rgb(179, 176, 176);
+}
+.subfooter h1{
+  font-size: 35px;
+  padding-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subfooter p{
+    font-size: 20px;
+}
+footer .mail{
+    color: aqua
+
+}
+footer .links{
+    background-color: #FFFFFF1F;
+    color: #C8CADA;
+    font-size: 35px;
+    border-radius: 50px;
+    padding: 10px;
+    width: 60px;
+    padding-left: 15px;
+    /* letter-spacing: 10px; */
+}
+footer .twitter{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+footer .lword{
+    text-align: center;
+    color: rgb(179, 176, 176);
+    font-size: 20px;
+}
+
+
+
+
+
+/* RESPONSIVENESS */

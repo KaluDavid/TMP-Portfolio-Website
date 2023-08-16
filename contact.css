@@ -1,0 +1,172 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #0F0F0F;
+    background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
+    background-position: top center;
+    margin: auto;
+    padding: auto;
+    font-family: Montserrat;
+width: 100%;
+}
+
+
+
+button,
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+/* justify-content: space-between; */
+gap: 35%;
+/* margin: 0% 10% 0% 10%; */
+position: fixed;
+background-color: #0F0F0F;
+width: 100%;
+}
+
+header p{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    opacity: 0.5;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight:200;
+    padding-left: 3rem;
+   
+}
+
+
+.icon {
+    display: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+ol{
+    color: aqua;
+    list-style-type: none;
+    /* display: flex; */
+
+}
+li{
+display: flex;
+gap:10%;
+font-weight: 600;
+
+}
+.nav {
+    display: flex;
+    gap: 80px;
+}
+
+
+
+.hamburger{
+    display: none;
+
+}
+nav {
+    display: flex;
+    /* gap: 3px; */
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+
+
+/* main */
+main{
+    /* width: 50%; */
+    margin: 0% 10% 10% 10%;
+    padding-top: 10%;
+    color: gainsboro;
+   
+}
+
+section a{
+    color: aqua;
+}
+
+section{
+    width: 70%;
+    font-size: 20px;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    background-color: #0F0F0F;
+height: 20rem;
+}
+.subfooter{
+    margin: 0% 10% 0% 10%;
+    color: rgb(179, 176, 176);
+}
+.subfooter h1{
+  font-size: 35px;
+  padding-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subfooter p{
+    font-size: 20px;
+}
+footer .mail{
+    color: aqua
+
+}
+footer .links{
+    background-color: #FFFFFF1F;
+    color: #C8CADA;
+    font-size: 35px;
+    border-radius: 50px;
+    padding: 10px;
+    width: 60px;
+    padding-left: 15px;
+    /* letter-spacing: 10px; */
+}
+footer .twitter{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+footer .lword{
+    text-align: center;
+    color: rgb(179, 176, 176);
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
