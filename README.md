@@ -1,7 +1,9 @@
 # TMP-Portfolio-Website 
 
 ## Built with 
-</Br> 
-HTML - CSS - JAVASCRIPT
-Live Link (https://kaludavid.github.io/TMP-Portfolio-Website/)
+ 
+HTML - CSS - JAVASCRIPT 
+
+</Br>
+Live Link [Click me(https://kaludavid.github.io/TMP-Portfolio-Website/)]
 
