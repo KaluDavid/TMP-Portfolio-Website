@@ -5,5 +5,5 @@
 HTML - CSS - JAVASCRIPT 
 
 </Br>
-Live Link-(Click)[https://kaludavid.github.io/TMP-Portfolio-Website/]
+Live Link-[Link](https://kaludavid.github.io/TMP-Portfolio-Website/)
 
