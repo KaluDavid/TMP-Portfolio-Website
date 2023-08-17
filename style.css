@@ -12,6 +12,7 @@ body{
     padding: auto;
     font-family: Montserrat;
 width: 100%;
+
 }
 
 
@@ -33,8 +34,16 @@ position: fixed;
 background-color: #0F0F0F;
 width: 100%;
 
+animation: 1s ease-out 0s 1 slideInLeft;
 }
-
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
 header p{
     font-family: 'Dancing Script', cursive;
     color: white;
@@ -92,7 +101,7 @@ nav {
     text-decoration: none;
     font-size: 17px;
     font-weight: 500;
-    color: whitesmoke;
+    color: white;
     cursor: pointer;
 }
 
@@ -101,12 +110,38 @@ nav {
 /* main */
 main{
     /* width: 50%; */
-    margin: 0% 10% 10% 10%;
-    padding-top: 15%;
+    margin: 0% 10% 5% 10%;
+    padding-top: 12%;
     color: rgb(179, 176, 176);
    
+
+
 }
 
+
+.first{
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+0%{
+    width:0%;
+    height: 0%;
+}    
+
+
+/* 60%{
+    width: 50%;
+    height: 30%;
+} */
+
+
+80%{
+    width: 100%;
+    height: 80%;
+}
+
+}
 
 .first h2, h1{
 
@@ -114,10 +149,12 @@ line-height: 10px;
     }
 .first h2{
     font-size: 30px;
+    
 }
     .first h1{
         font-size: 70px;
         color: white;
+        
     }
 
 .first p{
@@ -149,9 +186,18 @@ line-height: 10px;
 /* works */
 .works{
     width: auto;
+    
+}
+
+/* secondsection */
+
+
+.secondsection{
+    margin-top: 30%;
 }
 .second{
     display: flex;
+
 }
 .second p{
     color: white;
@@ -164,38 +210,62 @@ line-height: 10px;
 .second hr{
     margin-top: 7%;
 border: 1px solid aqua;
-width: 60%;
+width: 65%;
 height: 1px;
-margin-left: 5%;
+margin-left: 7%;
 }
 
 
 
-/* Worl1 */
+.github button{
+    background-color: black;
+    border:  1px solid #118080;
+
+    padding: 15px;
+    border-radius: 3px;
+    color: rgb(179, 176, 176);
+    font-size: 17px;
+ height: 3rem; 
+
+ width: 30%;
+ margin-top: 30px; 
+}
+
+.github button:hover{
+    background-color: #118080;
+    color: white;
+}
+
+.github{
+    /* padding-right: 30%; */
+    margin-left: 20%;   
+}
 
 .flex{
  
     gap: 40px;
 
     border-radius: 5px;
-    border: 1px solid aqua;
-    background-color: black;
-    background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
-background-repeat: no-repeat;
-background-size: cover;
-    padding: 5px 5px 5px 5px;
-width: 100%;
+    /* border: 1px solid aqua; */
+
+    /* padding: 5px 5px 5px 5px; */
+/* width: 100%; */
 margin-bottom: 30px;
 }
 
 .home {
- color:white;
-
- padding: 20px;
- margin: 30px;
+    color: rgb(179, 176, 176);
+    background-color: black;
+    background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
+background-repeat: no-repeat;
+background-size: cover;
+ padding: 50px;
+ /* margin: 30px; */
+ 
  border-radius: 5px;
  border: 1px solid aqua;
  width: 50%;
+ height: 25rem;
 }
 .home button{
   
@@ -204,13 +274,15 @@ margin-bottom: 30px;
     width: 20%;
     padding: 10px;
     border-radius: 3px;
-    color: white;
+    color: rgb(179, 176, 176);
     font-size: 17px;
  height: 3rem; 
  width: 50%;
  margin-top: 30px; 
 }
-
+.home h2{
+    color: whitesmoke;
+}
 .home button:hover{
     background-color: #118080;
     color: white;
@@ -225,34 +297,36 @@ margin-bottom: 30px;
 }
 
 
-.home1{
-    color:white;
 
-    padding: 20px;
-    margin: 30px;
-    border-radius: 5px;
-    border: 1px solid aqua;
-    width: 50%;
-}
+#typing {
 
-.home1 button{
-  
-    background-color: black;
-    border:  1px solid #118080;
-    width: 20%;
-    padding: 10px;
-    border-radius: 3px;
-    color: white;
-    font-size: 17px;
- height: 3rem; 
- width: 50%;
- margin-top: 30px; 
-}
+    margin-top: 10%;
+    margin-left: 35%;
+        width: 0ch;
+        color: white;
+        /* float: right; */
+        font-family:'dancing script';
+        /* font-weight:bold; */
+        font-size: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 2s steps(22) 1s infinite alternate;
+    }
+    
+    
+    @keyframes typing {
+        from {
+            width: 0ch;
+        }
+        to {
+            width: 40ch;
+        }
+    }
 
-.home1 button:hover{
-    background-color: #118080;
-    color: white;
-}
+
+
+
+
 
 /* FOOTER */
 footer{
@@ -319,6 +393,8 @@ footer .lword{
 @media screen and (max-width:717px) {
     body{
         width: 717px;
+       
+        /* overflow: hidden; */
     }
 
     .nav {
@@ -404,6 +480,10 @@ footer{
     
 
     /* main */
+
+    main{
+        padding-top: 20%;
+    }
     .first button{
         width: 30%;
     }
@@ -420,7 +500,7 @@ font-size: 50px;
     }
 
     .home button{
-        width: 80%;
+        /* width: 80%; */
     }
 
   

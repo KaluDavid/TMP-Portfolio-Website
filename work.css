@@ -32,8 +32,17 @@ gap: 35%;
 position: fixed;
 background-color: #0F0F0F;
 width: 100%;
-}
 
+animation: 1s ease-out 0s 1 slideInLeft;
+}
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
 header p{
     font-family: 'Dancing Script', cursive;
     color: white;
@@ -88,7 +97,7 @@ nav {
     text-decoration: none;
     font-size: 17px;
     font-weight: 500;
-    color: whitesmoke;
+    color: white;
     cursor: pointer;
 }
 
@@ -104,6 +113,32 @@ main{
     color: gainsboro;
    
 }
+.firstsection{
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+0%{
+    width:0%;
+    height: 0%;
+}    
+
+30%{
+    width: 20%;
+    height: 0%;
+}
+
+60%{
+    width: 50%;
+    height: 30%;
+}
+
+80%{
+    width: 100%;
+    height: 80%;
+}
+}
+
 .firstsection h2{
     font-weight: 600;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -117,9 +152,6 @@ main{
     color: rgb(179, 176, 176);
     width: 80%;
 }
-
-
-
 
 /* works */
 .second{
@@ -149,25 +181,33 @@ height: 1px;
     gap: 40px;
 
     border-radius: 5px;
-    border: 1px solid aqua;
-    background-color: black;
-    background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
-background-repeat: no-repeat;
-background-size: cover;
-    padding: 5px 5px 5px 5px;
-width: 100%;
+    /* border: 1px solid aqua; */
+
+    /* padding: 5px 5px 5px 5px; */
+/* width: 100%; */
 margin-bottom: 30px;
 }
 
 .home {
- color:white;
-
- padding: 20px;
- margin: 30px;
+    color: rgb(179, 176, 176);
+    background-color: black;
+    background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
+background-repeat: no-repeat;
+background-size: cover;
+ padding: 50px;
+ /* margin: 30px; */
  border-radius: 5px;
  border: 1px solid aqua;
  width: 50%;
+ margin-right: 5%;
+ margin-bottom: 5%;
+ height: 25rem;
+
+
+ 
 }
+
+
 .home button{
   
     background-color: black;
@@ -175,13 +215,15 @@ margin-bottom: 30px;
     width: 20%;
     padding: 10px;
     border-radius: 3px;
-    color: white;
+    color: rgb(179, 176, 176);
     font-size: 17px;
  height: 3rem; 
  width: 50%;
  margin-top: 30px; 
 }
-
+.home h2{
+    color: whitesmoke;
+}
 .home button:hover{
     background-color: #118080;
     color: white;
@@ -227,11 +269,57 @@ margin-left: 5%;
 
 
 
+.github button{
+    background-color: black;
+    border:  1px solid #118080;
+
+    padding: 15px;
+    border-radius: 3px;
+    color: rgb(179, 176, 176);
+    font-size: 17px;
+ height: 3rem; 
+
+ width: 40%;
+ margin-top: 30px; 
+}
+
+.github button:hover{
+    background-color: #118080;
+    color: white;
+}
+
+.github{
+    /* padding-right: 30%; */
+    /* float: left; */
+    /* white-space: nowrap; */
+    margin-left: 18%;
+}
 
 
+#typing {
 
-
-
+    margin-top: 10%;
+    margin-left: 35%;
+        width: 0ch;
+        color: white;
+        /* float: right; */
+        font-family:'dancing script';
+        /* font-weight:bold; */
+        font-size: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 2s steps(22) 1s infinite alternate;
+    }
+    
+    
+    @keyframes typing {
+        from {
+            width: 0ch;
+        }
+        to {
+            width: 40ch;
+        }
+    }
 
 
 
@@ -290,7 +378,7 @@ footer .lword{
 @media screen and (max-width:1205px) {
     body{
         width: 1205px;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     
     header{
@@ -306,7 +394,7 @@ footer .lword{
 @media screen and (max-width:717px) {
     body{
         width: 717px;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .nav {
