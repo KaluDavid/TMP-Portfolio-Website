@@ -355,6 +355,8 @@ footer .lword {
 
 /* RESPONSIVENESS */
 
+
+/* screen 1205 */
 @media screen and (max-width:1205px) {
     body {
         width: 1205px;
@@ -369,7 +371,7 @@ footer .lword {
 }
 
 
-
+/* SCREEN 766PX */
 
 @media screen and (max-width:766px) {
     body {
