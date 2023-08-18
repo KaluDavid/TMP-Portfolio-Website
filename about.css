@@ -1,17 +1,19 @@
-
 * {
     box-sizing: border-box;
+    
 }
 
 
-body{
+body {
     background-color: #0F0F0F;
     background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
     background-position: top center;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     font-family: Montserrat;
-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 
 
@@ -26,31 +28,32 @@ a {
 
 header {
     display: flex;
-/* justify-content: space-between; */
-gap: 35%;
-/* margin: 0% 10% 0% 10%; */
-position: fixed;
-background-color: #0F0F0F;
-width: 100%;
-animation: 1s ease-out 0s 1 slideInLeft;
+    gap: 35%;
+    position: fixed;
+    background-color: #0F0F0F;
+    width: 100%;
+    animation: 1s ease-out 0s 1 slideInLeft;
 }
+
 @keyframes slideInLeft {
     0% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
 }
-header p{
+
+header p {
     font-family: 'Dancing Script', cursive;
-    color:white;
+    color: white;
     opacity: 0.5;
     font-size: 15px;
     line-height: 15px;
-    font-weight:200;
+    font-weight: 200;
     padding-left: 3rem;
-   
+
 }
 
 
@@ -61,18 +64,20 @@ header p{
 
 }
 
-ol{
+ol {
     color: aqua;
     list-style-type: none;
     /* display: flex; */
+    flex-wrap: wrap;
+}
+
+li {
+    display: flex;
+    gap: 10%;
+    font-weight: 600;
 
 }
-li{
-display: flex;
-gap:10%;
-font-weight: 600;
 
-}
 .nav {
     display: flex;
     gap: 80px;
@@ -80,16 +85,17 @@ font-weight: 600;
 
 
 
-.hamburger{
+.hamburger {
     display: none;
 
 }
+
 nav {
     display: flex;
     /* gap: 3px; */
     padding-top: 20px;
     padding-left: 50px;
-    
+
 }
 
 .nav a {
@@ -103,117 +109,124 @@ nav {
 
 
 /* main */
-main{
+main {
     /* width: 50%; */
-    margin: 0% 10% 0% 10%;
+    /* margin: 0% 10% 0% 10%; */
     padding-top: 10%;
     color: rgb(179, 176, 176);
-   
+    margin: 0 5%;
+
 }
-.firstsection{
+
+.firstsection {
     animation: animate 1s linear forwards;
 }
 
 @keyframes animate {
-0%{
-    width:0%;
-    height: 0%;
-}    
+    0% {
+        width: 0%;
+        height: 0%;
+    }
 
-30%{
-    width: 20%;
-    height: 0%;
+    30% {
+        width: 20%;
+        height: 0%;
+    }
+
+    60% {
+        width: 50%;
+        height: 30%;
+    }
+
+    80% {
+        width: 100%;
+        height: 80%;
+    }
 }
 
-60%{
-    width: 50%;
-    height: 30%;
-}
-
-80%{
-    width: 100%;
-    height: 80%;
-}
-}
-
-.firstsection .firstp{
-font-weight: 600;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
+.firstsection .firstp {
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     width: 60%;
     /* color: whitesmoke; */
+    flex-wrap: wrap;
 }
 
-.firstsection .secondp{
-line-height: 25px;
+.firstsection .secondp {
+    line-height: 25px;
+    flex-wrap: wrap;
 }
 
 /* second section */
 
-.secondsection .second{
-    display:flex;
-    gap:20px;
+.secondsection .second {
+    display: flex;
+    gap: 20px;
 }
 
-.second p{
-    color:white;
+.second p {
+    color: white;
     font-size: 40px;
     font-family: 'halant';
     font-weight: 600;
-
+    flex-wrap: wrap;
 }
 
-.second hr{
+.second hr {
     margin-top: 7%;
-border: 1px solid aqua;
-width: 70%;
-height: 1px;
+    border: 1px solid aqua;
+    width: 70%;
+    height: 1px;
 }
 
-.second1{
+.second1 {
     border-radius: 5px;
     border: 1px solid aqua;
     background-color: black;
     background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
-background-repeat: no-repeat;
-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px 20px 20px 20px;
-width: 50%;
+    /* width: 50%; */
 }
 
 
-.second1 h2{
-font-size: 23px;
-color: white;
+.second1 h2 {
+    font-size: 23px;
+    color: white;
 }
-.p1{
+
+.p1 {
     color: aqua;
-font-weight: 600;
+    font-weight: 600;
     font-size: 17px;
 }
-.p2{
+
+.p2 {
     line-height: 30px;
 }
-.second1 hr{
+
+.second1 hr {
     border: 1px solid aqua;
 }
 
 
-.second1 button{
+.second1 button {
     background-color: black;
     /* width: 20%; */
     padding: 10px;
-    border:  1px solid #118080;
+    border: 1px solid #118080;
     border-radius: 3px;
     color: #118080;
     font-size: 17px;
- height: 3rem; 
+    height: 3rem;
 
 }
 
-.second1 button:hover{
-    background-color:#118080;
-  
+.second1 button:hover {
+    background-color: #118080;
+
     color: white;
 }
 
@@ -221,89 +234,98 @@ font-weight: 600;
 /* thirdsection */
 
 
-.thirdsection h1{
-font-size: 40px;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-.thirdsection button{
-background-color: black;
-width: 50%;
-padding: 10px;
-border:  1px solid #118080;
-border-radius: 3px;
-color: #118080;
-font-size: 17px;
-height: 3rem; 
-margin-top: 30px; 
+.thirdsection h1 {
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: normal;
 }
 
-.thirdsection button:hover{
-background-color:#118080;
+.thirdsection button {
+    background-color: black;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #118080;
+    border-radius: 3px;
+    color: #118080;
+    font-size: 17px;
+    height: 3rem;
+    /* margin-top: 20px;  */
+}
 
-color: white;
+.thirdsection button:hover {
+    background-color: #118080;
+
+    color: white;
 }
 
 
 /* coversectiion */
 
-.coversection{
+.coversection {
     display: flex;
-    gap: 20%;
+    gap: 10%;
+    flex-wrap: wrap;
 }
-
 
 
 #typing {
 
     margin-top: 10%;
-    margin-left: 35%;
+    /* margin-left: 5%; */
+    width: 0ch;
+    color: white;
+    /* float: right; */
+    font-family: 'dancing script';
+    /* font-weight:bold; */
+    font-size: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(22) 1s infinite alternate;
+
+}
+
+
+@keyframes typing {
+    from {
         width: 0ch;
-        color: white;
-        /* float: right; */
-        font-family:'dancing script';
-        /* font-weight:bold; */
-        font-size: 30px;
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typing 2s steps(22) 1s infinite alternate;
-    }
-    
-    
-    @keyframes typing {
-        from {
-            width: 0ch;
-        }
-        to {
-            width: 40ch;
-        }
     }
 
+    to {
+        width: 23ch;
+    }
+}
 
 
 /* FOOTER */
-footer{
+
+footer {
     background-color: #0F0F0F;
-height: 20rem;
+    height: 20rem;
+
 }
-.subfooter{
-    margin: 0% 10% 0% 10%;
+
+.subfooter {
+    /* margin: 0% 10% 0% 10%; */
+    margin: 0 5%;
     color: rgb(179, 176, 176);
 }
-.subfooter h1{
-  font-size: 35px;
-  padding-top: 30px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.subfooter h1 {
+    font-size: 35px;
+    padding-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.subfooter p{
+.subfooter p {
     font-size: 20px;
 }
-footer .mail{
-    color: aqua
 
+
+footer .mail {
+    color: aqua;
 }
-footer .links{
+
+footer .links {
     background-color: #FFFFFF1F;
     color: #C8CADA;
     font-size: 35px;
@@ -313,16 +335,18 @@ footer .links{
     padding-left: 15px;
     /* letter-spacing: 10px; */
 }
-footer .twitter{
+
+footer .twitter {
     display: flex;
     gap: 15px;
     margin-top: 20px;
 }
-footer .lword{
+
+footer .lword {
     text-align: center;
     color: rgb(179, 176, 176);
     font-size: 20px;
-    
+
 }
 
 
@@ -331,12 +355,12 @@ footer .lword{
 /* RESPONSIVENESS */
 
 @media screen and (max-width:1205px) {
-    body{
+    body {
         width: 1205px;
         /* overflow: hidden; */
     }
-    
-    header{
+
+    header {
         display: flex;
         gap: 20%;
     }
@@ -346,112 +370,137 @@ footer .lword{
 
 
 
-@media screen and (max-width:717px) {
-    body{
-        width: 717px;
-        /* overflow: hidden; */
+@media screen and (max-width:766px) {
+    body {
+        width: 766px;
+       
+        overflow-x: hidden;
     }
 
     .nav {
         display: none;
-       
 
-    }   
 
-    header{
-width: 717px;
-display: flex;
-gap: 60%;
-/* background-color: white; */
     }
+
+    header {}
 
     .icon {
         display: block;
-  
+        color: white;
     }
-main{
-    width: auto;
-}
 
-footer{
-    width:auto;
-}
-    /* hamburger menu */
-    nav{
+    main {
+        width: auto;
+        padding-top: 20%;
+        overflow-x: hidden;
+    }
+
+    footer {
+        width: auto;
+    }
+
+/* hamburger */
+
+    nav {
         position: relative;
         z-index: 1;
-      
-        
+
+
     }
-        
-    .hamburger{
+
+    header {
+        /* display: flex; */
+        gap: 65%;
+        overflow-x: hidden;
+    }
+
+    .hamburger {
         position: fixed;
         background-color: #0F0F0F;
         background-image: url('https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png');
         /* background-position: top center; */
-     background-repeat: repeat;
-        height: 100%;  
-        left: 150px;
-        width: 717px;
-    /* top: 89px; */
- 
-    
+        background-repeat: repeat;
+        height: 100%;
+        left: 250px;
+        width: 500px;
+        top: 89px;
+
+
     }
-    
-      
+
+
     .hamburger ol {
         list-style-type: none;
-    
-    
-    
+
+
+
     }
-    
+
 
     .hamburger ol li {
         padding: 30px;
         text-align: center;
     }
-   
-    
-    
+
+
+
     .hamburger ol li a {
         text-decoration: none;
         color: white;
         cursor: pointer;
-      text-align: center;
+        text-align: center;
         font-weight: 600;
-    /* top: 100px; */
-    font-size: 20px;
-    
+        /* top: 100px; */
+        font-size: 20px;
+
     }
-    
+
     .visible {
         display: block;
         padding: 10px;
-    
-    
+
+
     }
 
 
-    main{
+    main {
+        margin: 0 5%;
+        width: auto;
+        overflow-x: hidden;
+    }
 
+    .second hr {
+        width: 67%;
+        margin-top: 60px;
+        margin-left: 3%;
     }
-     
-     .second hr{
-        width: 55%;
-        margin-top: 75px;
+
+    .second p {
+        font-size: 30px;
     }
-.coversection{
-    display: flex;
-    gap: 40px;
+
+    .coversection {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .second1 {
+        flex-wrap: wrap;
+      
+    }
+
+    .thirdsection button {
+        width: 35%;
+        margin-top: 15px;
+    }
+
+    .thirdsection h1 {
+        margin-bottom: 1px;
+    }
+
+    footer {
+        width: auto;
+        overflow-x: hidden;
+    }
 }
-    .second1{
-        width: 90%;
-    }
-
-    .thirdsection button{
-        width: 90%;
-    }
-}
-
-
