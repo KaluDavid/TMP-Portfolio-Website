@@ -8,11 +8,11 @@ body{
     background-color: #0F0F0F;
     background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
     background-position: top center;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     font-family: Montserrat;
 width: 100%;
-
+overflow-x: hidden;
 }
 
 
@@ -27,13 +27,10 @@ a {
 
 header {
     display: flex;
-/* justify-content: space-between; */
 gap: 35%;
-/* margin: 0% 10% 0% 10%; */
 position: fixed;
 background-color: #0F0F0F;
 width: 100%;
-
 animation: 0.6s ease-out 0s 1 slideInLeft;
 }
 @keyframes slideInLeft {
@@ -51,7 +48,6 @@ header p{
     font-size: 15px;
     line-height: 15px;
     font-weight:200;
-
     padding-left: 3rem;
 }
 
@@ -61,7 +57,7 @@ header p{
     display: none;
     color: white;
     font-size: 30px;
-
+    flex-wrap: wrap;
 }
 
 ol{
@@ -79,7 +75,6 @@ font-weight: 600;
 .nav {
     display: flex;
     gap: 80px;
-    flex-wrap: wrap;
 
 }
 
@@ -110,7 +105,7 @@ nav {
 /* main */
 main{
     /* width: 50%; */
-    margin: 0% 10% 5% 10%;
+    margin: 0 5%;
     padding-top: 12%;
     color: rgb(179, 176, 176);
    
@@ -118,30 +113,7 @@ main{
 
 }
 
-/* 
-.first{
-    animation: animate 1s linear forwards;
-}
 
-@keyframes animate {
-0%{
-    width:0%;
-    height: 0%;
-}    
-
-
-/* 60%{
-    width: 50%;
-    height: 30%;
-} 
-
-
-80%{
-    width: 100%;
-    height: 80%;
-}
-
-} */
 .first{
 animation: 1.5s ease-out 0s 1 slideInLeft;
 }
@@ -168,10 +140,9 @@ line-height: 10px;
         
     }
 
-.first p{
+.first div p{
     line-height: 25px;
-    /* letter-spacing: 1px; */
-    /* width: 80%; */
+    flex-wrap: wrap;
    
 }
 
@@ -248,22 +219,19 @@ margin-left: 7%;
 }
 
 .github{
-    /* padding-right: 30%; */
     margin-left: 12%;   
 }
 
 .flex{
  
-    gap: 40px;
+    
 
     border-radius: 5px;
-    /* border: 1px solid aqua; */
-
-    /* padding: 5px 5px 5px 5px; */
-/* width: 100%; */
 margin-bottom: 30px;
 }
-
+.flex2{
+    gap: 40px;
+}
 .home {
     color: rgb(179, 176, 176);
     background-color: black;
@@ -320,7 +288,7 @@ background-size: cover;
         font-family:'dancing script';
         /* font-weight:bold; */
         font-size: 30px;
-        overflow: hidden;
+        overflow-x: hidden;
         white-space: nowrap;
         animation: typing 2s steps(22) 1s infinite alternate;
     }
@@ -346,7 +314,8 @@ footer{
     height: 20rem;
 }
 .subfooter{
-    margin: 0% 10% 0% 10%;
+
+    margin: 0 5%;
     color: rgb(179, 176, 176);
 }
 .subfooter h1{
@@ -390,6 +359,7 @@ footer .lword{
 /* RESPONSIVENESS */
 
 @media screen and (max-width:1075px) {
+   
     body{
         width: 1075px;
     }
@@ -408,13 +378,13 @@ footer .lword{
 }
 
 
-@media screen and (max-width:717px) {
+@media screen and (max-width:766px) {
     
 
     body{
-        width: 717px;
+        width: 766px;
        
-        /* overflow: hidden; */
+      overflow-x: hidden;
     }
 
     .nav {
@@ -424,22 +394,18 @@ footer .lword{
     }   
 
     header{
-width: 717px;
-display: flex;
-gap: 60%;
-/* background-color: white; */
+        gap: 65%;
+        overflow-x: hidden;
     }
 
     .icon {
         display: block;
   
     }
-main{
-    width: auto;
-}
 
 footer{
     width:auto;
+    overflow-x: hidden;
 }
     /* hamburger menu */
     nav{
@@ -453,11 +419,11 @@ footer{
         position: fixed;
         background-color: #0F0F0F;
         background-image: url('https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png');
-        /* background-position: top center; */
+
      background-repeat: repeat;
         height: 100%;  
-        left: 150px;
-        width: 717px;
+        left: 250px;
+        width: 500px;
     top: 89px;
  
     
@@ -485,7 +451,7 @@ footer{
         cursor: pointer;
       text-align: center;
         font-weight: 600;
-    /* top: 100px; */
+
     font-size: 20px;
     
     }
@@ -500,10 +466,14 @@ footer{
     
 
     /* main */
-
     main{
+        margin: 0 5%;
+        width: auto;
+        overflow-x: hidden;
         padding-top: 20%;
     }
+    
+ 
     .first button{
         width: 30%;
     }
@@ -511,27 +481,35 @@ footer{
 font-size: 50px;
     }
 
+.first div p{
+    
+}
+.flex2{
+    flex-direction: column;
+    overflow-x: hidden;
+  
+}
+
+
+.home{
+    width: auto;
+    margin-bottom: 2%;
+}
     .second p{
         font-size: 30px;
     }
     .second hr{
-        width: 49%;
+        width: 55%;
         margin-left: 10%;
         margin-top: 55px;
-        overflow:hidden;
+        overflow-x: hidden;
     }
 
-    .home button{
-        width: 90%;
-        overflow: hidden;
-    }
+  
 
-  .home{
-    height: 33rem;
-  }
 .github button{
     width: 60%;
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -545,55 +523,75 @@ font-size: 50px;
 }
 }
 
-
-@media screen and (max-width:563px) {
+/* screen 650 */
+@media screen and (max-width:650px) {
     body{
-        width:563px;
+        width:650px;
+        overflow-x: hidden;
     }
 .icon{
     margin-top: 5px;
 }
+
+
+/*  main*/
     main{
         width: auto;
         padding-top: 20%;
     }
 
-    header, footer{
-        width: 563px;
+    header{
+        width: 650px;
     }
     .flex2{
         flex-direction: column;
     }
     .home{
         width: auto;
-        margin-bottom: 10%;
+        /* margin-bottom: 10%; */
         height: 25rem;
     }
     .home button{
         width: 50%;
     }
 
-   #home2{
-    width: 95%;
-   }
-
-   .github{
-    margin-left: 3%;
-   }
 
    .second hr{
-    width: 35%;
+    width: 45%;
    }
    
 }
 
 
-/* screen */
-/* @media screen and (max-width:425px){
+/* screen 582px */
+@media screen and (max-width:582px) {
     body{
-        width: 425px;
+        width: 582px;
+        overflow-x: hidden;
     }
-#typing{
-    display: none;
+
+
+header{
+    gap: 50%;
 }
-} */
+
+    main{
+        width: 582px;
+        overflow-x: hidden;
+    }
+
+    .first div p{
+        /* flex-wrap: wrap; */
+        width: 90%;
+    }
+
+    .home{
+        width: 90%;
+    }
+
+    .github{
+     
+    }
+}
+
+
