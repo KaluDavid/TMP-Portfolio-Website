@@ -8,10 +8,11 @@ body{
     background-color: #0F0F0F;
     background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
     background-position: top center;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     font-family: Montserrat;
 width: 100%;
+overflow-x: hidden;
 }
 
 
@@ -25,15 +26,13 @@ a {
 /* HEADER */
 
 header {
+    padding: 2%;
     display: flex;
-/* justify-content: space-between; */
 gap: 35%;
-/* margin: 0% 10% 0% 10%; */
 position: fixed;
 background-color: #0F0F0F;
 width: 100%;
-
-animation: 1s ease-out 0s 1 slideInLeft;
+animation: 0.6s ease-out 0s 1 slideInLeft;
 }
 @keyframes slideInLeft {
     0% {
@@ -51,15 +50,16 @@ header p{
     line-height: 15px;
     font-weight:200;
     padding-left: 3rem;
-   
+    padding-top: 15px;
 }
+
 
 
 .icon {
     display: none;
     color: white;
     font-size: 30px;
-
+    flex-wrap: wrap;
 }
 
 ol{
@@ -77,6 +77,7 @@ font-weight: 600;
 .nav {
     display: flex;
     gap: 80px;
+
 }
 
 
@@ -88,7 +89,7 @@ font-weight: 600;
 nav {
     display: flex;
     /* gap: 3px; */
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 50px;
     
 }
@@ -104,14 +105,11 @@ nav {
 
 
 
-
 /* main */
 main{
-    /* width: 50%; */
-    margin: 0% 10% 10% 10%;
-    padding-top: 10%;
-    color: gainsboro;
-   
+    padding-top: 12%;
+    color: rgb(179, 176, 176);
+    margin: 0 5%;
 }
 .firstsection{
     animation: animate 1s linear forwards;
@@ -154,7 +152,11 @@ main{
 }
 
 /* works */
+.works{
+    margin-top: 10%;
+}
 .second{
+    margin-bottom: 3%;
     display: flex;
 }
 .second p{
@@ -227,10 +229,12 @@ background-size: cover;
 
 .home p{
     line-height: 25px;
+  
     
 }
 .home h2{
     line-height: 40px;
+    font-size: 20px;
 }
 
 
@@ -245,7 +249,7 @@ background-size: cover;
 }
 .second{
     display: flex;
-
+    width: auto;
 }
 .second p{
     color: white;
@@ -255,13 +259,15 @@ background-size: cover;
 
 }
 
-.second hr{
-    margin-top: 7%;
-border: 1px solid aqua;
-width: 85%;
-height: 1px;
-margin-left: 5%;
+.second hr {
+    margin-top: 35px;
+  border: none;
+    width: 70%;
+    background-color: aqua;
+    height: 2px;
 }
+
+
 
 
 
@@ -269,7 +275,9 @@ margin-left: 5%;
     background-color: black;
     border:  1px solid #118080;
 
-    padding: 15px;
+    /* padding: 25px; */
+    padding-bottom: 20px;
+    padding-top: 10px;
     border-radius: 3px;
     color: rgb(179, 176, 176);
     font-size: 17px;
@@ -285,9 +293,7 @@ margin-left: 5%;
 }
 
 .github{
-    /* padding-right: 30%; */
-    /* float: left; */
-    /* white-space: nowrap; */
+
     margin-left: 18%;
 }
 
@@ -363,6 +369,12 @@ footer .lword{
 }
 
 
+footer hr{
+    height: 1px;
+    background-color: aqua;
+    width: auto;
+    }
+    
 
 
 
@@ -370,29 +382,65 @@ footer .lword{
 
 /* RESPONSIVENESS */
 
-@media screen and (max-width:1205px) {
-    body{
-        width: 1205px;
-        /* overflow: hidden; */
-    }
-    
+
+
+@media screen and (max-width:1165px) and (min-width:1095px) {
     header{
-        display: flex;
-        gap: 20%;
+     gap: 30%;
+    }
+    .home button{
+        width: 65%;
+    }
+  
+  }
+ 
+ /* screen 1085 */
+ @media screen and (max-width:1095px) and (min-width:766px) {
+     header{
+         gap: 20%;
+        } 
+        
+        main{
+         padding-top: 20%;
+        }
+ 
+    .second hr{
+        width: 70%;
     }
 
+    .home button{
+        width: 65%;
+    }
+
+ }
+@media screen and (max-width:995px) {
+    .home h2{
+font-size: 20px;
+    }
+
+    .home button{
+        width: 65%;
+    }
+
+    .home button{
+        width: 65%;
+    }
 }
+
+/* screen */
+@media screen and (max-width:793px) {
+    .second hr{
+        width: 50%;
+    }
+}
+
 
 
 
 @media screen and (max-width:766px) {
     
 
-    body{
-        width: 766px;
-       
-      overflow-x: hidden;
-    }
+
 
     .nav {
         display: none;
@@ -401,7 +449,7 @@ footer .lword{
     }   
 
     header{
-        gap: 58%;
+        gap: 65%;
         overflow-x: hidden;
     }
 
@@ -481,7 +529,9 @@ footer{
     }
     
  
-
+.firstsection p{
+    width: auto;
+}
 
 .flex{
     flex-direction: column;
@@ -498,15 +548,16 @@ footer{
 .home{
     width: auto;
     margin-bottom: 5%;
-    width: 90%;
+    width: 100%;
+
 }
     .second p{
         font-size: 30px;
     }
     .second hr{
-        width: 65%;
+        width: 75%;
         margin-left: 10%;
-        margin-top: 55px;
+        /* margin-top: 55px; */
         overflow-x: hidden;
     }
 
@@ -534,75 +585,53 @@ footer{
 
 
 
-/* screen 650 */
-@media screen and (max-width:650px) {
-    body{
-        width:650px;
-        overflow-x: hidden;
-    }
-.icon{
-    margin-top: 5px;
-}
-
-
-/*  main*/
-    main{
-        width: auto;
-        padding-top: 20%;
-    }
-
+@media screen and (max-width:598px) {
+ 
     header{
-       gap: 45%;
+        gap: 55%;
     }
-
-
-.second hr{
-    width: 55%;
 }
 
-    .home{
-        width: 85%;
+@media screen and (max-width:500px) {
+    main{
+padding-top: 20%;
+    }
+#typing{
+    font-size: 30px;
+}
+header{
+    gap: 40%;
+}
+.github button{
+    width: 70%;
+}
+}
+
+@media screen and (max-width:410px) {
+    .second hr{
+        display: none;
+    }
+
+    .first button{
+width: 50%;
     }
 
     .home button{
-        width: 45%;
-    }
-
-
-
-   
-}
-
-
-
-
-/* screen 582px */
-@media screen and (max-width:582px) {
-    body{
-        width: 582px;
-        overflow-x: hidden;
-    }
-
-
-header{
-    gap: 50%;
-}
-
-    main{
-        width: 582px;
-        overflow-x: hidden;
-    }
-
-    .first div p{
-        /* flex-wrap: wrap; */
         width: 90%;
     }
 
-    .home{
-        width: 90%;
-    }
+    .github button{
 
+        width: 70%;
+    }
+    #typing{
+        font-size: 20px;
+    }
+      
   
 }
+
+
+
 
 
