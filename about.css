@@ -13,7 +13,7 @@ body {
     font-family: Montserrat;
     width: 100%;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
+ 
 }
 
 
@@ -68,7 +68,6 @@ header p {
 ol {
     color: aqua;
     list-style-type: none;
-    /* display: flex; */
     flex-wrap: wrap;
 }
 
@@ -279,7 +278,7 @@ main {
     font-family: 'dancing script';
     /* font-weight:bold; */
     font-size: 30px;
-    overflow: hidden;
+    overflow-x: hidden;
     white-space: nowrap;
     animation: typing 2s steps(22) 1s infinite alternate;
 
@@ -386,7 +385,7 @@ footer .lword {
 
     }
 
-    header {}
+   
 
     .icon {
         display: block;
