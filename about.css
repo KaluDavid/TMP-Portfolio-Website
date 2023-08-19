@@ -52,7 +52,7 @@ header p {
     font-size: 15px;
     line-height: 15px;
     font-weight: 200;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
 padding-top: 15px;
 }
 
@@ -431,10 +431,9 @@ width: auto;
      
         background-repeat: repeat;
         height: 100%;
-        left: 250px;
-        width: 500px;
-        top: 89px;
-
+        left: 70px;
+        width: 90%;
+    top: 80px;
 
     }
 
@@ -509,6 +508,13 @@ main{
    }
     #typing{
         font-size: 20px;
+    }
+    header{
+        gap: 50%;
+    }
+
+    main{
+        padding-top: 30%;
     }
     
 }
