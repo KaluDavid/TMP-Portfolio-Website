@@ -110,19 +110,16 @@ nav {
 
 
 /* main */
-main{
-    /* width: 50%; */
-    margin: 0% 10% 5% 10%;
-    padding-top: 10%;
-    color: gainsboro;
-   
-}
 
 
 
 main{
     animation: animate 1s linear forwards;
     margin: 0 5%;
+    
+    padding-top: 10%;
+    color: gainsboro;
+   
 }
 
 @keyframes animate {
@@ -265,7 +262,7 @@ width: auto;
   }
  
  /* screen 1085 */
- @media screen and (max-width:1095px) and (min-width:766px) {
+ @media screen and (max-width:1095px) and (min-width:900px) {
      header{
          gap: 20%;
         } 
@@ -275,6 +272,12 @@ width: auto;
         }
  
     
+ }
+
+ @media screen and (max-width:900px) and (min-width:766px) {
+    main{
+        padding-top: 25%;
+    }
  }
   /* SCREEN 766PX  */
  
@@ -360,8 +363,10 @@ width: auto;
  main{
      padding-top: 20%;
  }
- 
-
+/*  
+section{
+    width: auto;
+} */
  
  
  }

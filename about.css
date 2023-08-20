@@ -153,6 +153,7 @@ main {
 .firstsection .secondp {
     line-height: 25px;
     flex-wrap: wrap;
+    width: 90%;
 }
 
 /* second section */
@@ -173,6 +174,8 @@ main {
     font-family: 'halant';
     font-weight: 600;
     flex-wrap: wrap;
+    width: 50%;
+ 
 }
 
 .second hr {
@@ -245,7 +248,7 @@ main {
 
 .thirdsection button {
     background-color: black;
-    width: 60%;
+    width: 20rem;
     padding: 10px;
     border: 1px solid #118080;
     border-radius: 3px;
@@ -420,7 +423,7 @@ width: auto;
 
     header {
    
-        gap: 65%;
+        gap: 70%;
         overflow-x: hidden;
     }
 
@@ -496,9 +499,16 @@ main{
 /* Screen 588 */
 @media screen and (max-width:588px) and (min-width:456px) {
    header{
-    gap: 55%;
+    gap: 69%;
    } 
 }
+
+@media screen and (max-width:534px) and (min-width:456px) {
+    header{
+     gap: 65%;
+    } 
+ }
+ 
 
 /* screen 456 */
 @media screen and (max-width:456px) {
@@ -510,11 +520,32 @@ main{
         font-size: 20px;
     }
     header{
-        gap: 50%;
+        gap: 60%;
     }
 
     main{
         padding-top: 30%;
     }
     
+}
+@media screen and (max-width:410px) {
+   
+   header{
+    gap: 55%;
+   }
+   
+      
+   
+}
+
+@media screen and (max-width:378px) {
+    header{
+        gap: 50%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    header{
+        gap: 40%;
+    }
 }

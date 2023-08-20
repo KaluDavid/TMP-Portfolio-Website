@@ -283,7 +283,7 @@ background-size: cover;
     font-size: 17px;
  height: 3rem; 
 
- width: 40%;
+ width: 30rem;
  margin-top: 30px; 
 }
 
@@ -293,10 +293,12 @@ background-size: cover;
 }
 
 .github{
-
-    margin-left: 18%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20%;
 }
-
 
 #typing {
 
@@ -566,14 +568,14 @@ footer{
   
 
 .github button{
-    width: 60%;
-    overflow-x: hidden;
+    width: 20rem;
+    
     
 }
 
 .github{
     margin-left: 5%;
-    overflow: hidden;
+
 }
 
 #typing{
@@ -605,7 +607,7 @@ header{
     gap: 50%;
 }
 .github button{
-    width: 70%;
+    width: 15rem;
 }
 
 }
@@ -625,7 +627,7 @@ width: 50%;
 
     .github button{
 
-        width: 70%;
+        width: 60rem;
     }
     #typing{
         font-size: 20px;

@@ -199,16 +199,15 @@ animation: 1.5s ease-out 0s 1 slideInLeft;
 
 .github button{
     background-color: black;
-    border:  1px solid #118080;
-
-    padding: 15px;
+    width: 30rem;
+    padding: 10px;
+    border: 1px solid #118080;
     border-radius: 3px;
-    color: rgb(179, 176, 176);
+    color: white;
     font-size: 17px;
- height: 3rem; 
-
- width: 50%;
+ /* height: 3rem;  */
  margin-top: 30px; 
+ 
 }
 
 .github button:hover{
@@ -217,7 +216,11 @@ animation: 1.5s ease-out 0s 1 slideInLeft;
 }
 
 .github{
-    margin-left: 12%;   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20%;
 }
 
 .flex{
@@ -390,8 +393,10 @@ font-size: 20px;
     }
 
     .home button{
-        width: 65%;
+        width: 75%;
     }
+
+
 }
 
 /* screen */
@@ -411,7 +416,7 @@ font-size: 20px;
     }   
 
     header{
-        gap: 65%;
+        gap: 70%;
         overflow-x: hidden;
     }
 
@@ -450,14 +455,14 @@ footer{
     .hamburger ol {
         list-style-type: none;
     
-    
-    
+    text-align: left;
+
     }
     
 
     .hamburger ol li {
         padding: 30px;
-        text-align: center;
+        text-align: left;
     }
    
     
@@ -466,7 +471,7 @@ footer{
         text-decoration: none;
         color: white;
         cursor: pointer;
-      text-align: center;
+      text-align: left;
         font-weight: 600;
 
     font-size: 20px;
@@ -498,17 +503,23 @@ footer{
 font-size: 50px;
     }
 
+    .first div p{
+        width: auto;
+    }
 
 .flex2{
     flex-direction: column;
     overflow-x: hidden;
-  
-}
+  }
 
 
 .home{
     width: auto;
     margin-bottom: 2%;
+}
+
+.github button{
+    width: 20rem;
 }
     .second p{
         font-size: 30px;
@@ -522,16 +533,7 @@ font-size: 50px;
 
   
 
-.github button{
-    width: 60%;
-    overflow-x: hidden;
-    
-}
 
-.github{
-    margin-left: 5%;
-    overflow: hidden;
-}
 
 #typing{
     overflow: hidden;
@@ -540,8 +542,18 @@ font-size: 50px;
 .first button{
     width: 40%;
 }
+
+.home button{
+width: 30%;
+}
 }
 
+
+@media screen and (max-width:721px) {
+    .home button{
+        width: 80%;
+    }
+}
 
 @media screen and (max-width:598px) {
     .second hr{
@@ -549,7 +561,7 @@ font-size: 50px;
     }
 
     header{
-        gap: 55%;
+        gap: 65%;
     }
 }
 
@@ -561,11 +573,15 @@ padding-top: 30%;
     font-size: 30px;
 }
 header{
-    gap: 40%;
+    gap: 60%;
 }
 }
 
 @media screen and (max-width:410px) {
+   
+   header{
+    gap: 55%;
+   }
     .second hr{
         display: none;
     }
@@ -587,4 +603,16 @@ width: 50%;
     }
       
    
+}
+
+@media screen and (max-width:378px) {
+    header{
+        gap: 50%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    header{
+        gap: 40%;
+    }
 }
