@@ -528,7 +528,7 @@ footer{
     main{
         margin: 0 5%;
         width: auto;
-        overflow-x: hidden;
+    
         padding-top: 20%;
     }
     
@@ -539,12 +539,12 @@ footer{
 
 .flex{
     flex-direction: column;
-    overflow-x: hidden;
+   
   
 }
 .flex2{
     flex-direction: column;
-    overflow-x: hidden;
+   
   
 }
 
@@ -607,7 +607,7 @@ header{
     gap: 50%;
 }
 .github button{
-    width: 15rem;
+    width: 20rem;
 }
 
 }
@@ -625,9 +625,10 @@ width: 50%;
         width: 90%;
     }
 
-    .github button{
-
-        width: 60rem;
+    .github button {
+flex-wrap: wrap;
+        width: 15rem;
+        height: 5rem;
     }
     #typing{
         font-size: 20px;

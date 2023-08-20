@@ -368,7 +368,9 @@ section{
     width: auto;
 } */
  
- 
+ #p{
+    width: 100%;
+ }
  }
  
  
