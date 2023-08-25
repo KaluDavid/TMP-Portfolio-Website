@@ -303,12 +303,9 @@ background-size: cover;
 #typing {
 
     margin-top: 10%;
-    /* margin-left: 5%; */
         width: 0ch;
-        color: white;
-        /* float: right; */
+        color: white; 
         font-family:'dancing script';
-        /* font-weight:bold; */
         font-size: 30px;
         overflow-x: hidden;
         white-space: nowrap;
