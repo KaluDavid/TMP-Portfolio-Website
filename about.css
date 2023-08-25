@@ -332,13 +332,13 @@ footer .mail {
 }
 
 footer .links {
-    background-color: #FFFFFF1F;
+
     color: #C8CADA;
     font-size: 35px;
-    border-radius: 50px;
+
     padding: 10px;
-    width: 60px;
-    padding-left: 15px;
+
+   
     /* letter-spacing: 10px; */
 }
 
