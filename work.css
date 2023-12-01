@@ -345,8 +345,8 @@ height: 20rem;
     font-size: 20px;
 }
 footer .mail{
-    color: aqua
-
+    color: aqua;
+    text-decoration: none;
 }
 footer .links{
 
@@ -358,10 +358,18 @@ footer .links{
 
     /* letter-spacing: 10px; */
 }
+
+.link img{
+    width:  45px;
+    
+   
+   }
 footer .twitter{
     display: flex;
     gap: 15px;
     margin-top: 20px;
+    align-items: center;
+
 }
 footer .lword{
     text-align: center;
