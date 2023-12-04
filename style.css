@@ -441,7 +441,11 @@ font-size: 20px;
         padding-top: 25%;
     }
 }
-
+@media screen and (max-width:849px) {
+    header{
+        gap:30%
+    }
+}
 /* screen */
 @media screen and (max-width:793px) {
     .second hr{
@@ -621,6 +625,12 @@ object-fit: contain;
         gap: 65%;
     }
 }
+@media screen and (max-width:534px) and (min-width:456px) {
+    
+    .second :hr{
+        display: none;
+    }
+ }
 
 @media screen and (max-width:500px) {
     main{
