@@ -154,6 +154,7 @@ main {
     line-height: 25px;
     flex-wrap: wrap;
     width: 90%;
+    /* font-size:16px; */
 }
 
 /* second section */

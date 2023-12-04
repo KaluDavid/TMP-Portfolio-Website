@@ -28,12 +28,13 @@ a {
 header {
     padding: 2%;
     display: flex;
-gap: 35%;
+/* gap: 35%; */
+gap:50%;
 position: fixed;
 background-color: #0F0F0F;
 width: 100%;
 animation: 0.6s ease-out 0s 1 slideInLeft;
-align-items: center;
+/* align-items: center; */
 }
 @keyframes slideInLeft {
     0% {
@@ -89,7 +90,7 @@ font-weight: 600;
 }
 nav {
     display: flex;
-    /* gap: 3px; */
+    gap: 3px;
     padding-top: 10px;
     padding-left: 50px;
     
@@ -392,25 +393,31 @@ footer hr{
 
 
 @media screen and (max-width:1165px) and (min-width:1095px) {
-    header{
+    /* header{
      gap: 30%;
-    }
+    } */
     
   
   }
  
  /* screen 1085 */
  @media screen and (max-width:1095px) and (min-width:766px) {
-     header{
-         gap: 20%;
-        } 
+     /* header{
+         /* gap: 20%; *
+gap:45%;
+        }  */
         
-        main{
-         /* padding-top: 20%; */
-        }
+        /* main{
+         padding-top: 20%;
+        } */
  
     .second hr{
         width: 60%;
+    }
+ }
+ @media screen and (max-width:1095px) {
+    header{
+        gap: 42%;
     }
  }
 @media screen and (max-width:995px) {
@@ -424,7 +431,11 @@ font-size: 20px;
 
 
 }
-
+@media screen and (max-width:951px) {
+    header{
+        gap:35%;
+    }
+}
 @media screen and (max-width:885px) {
     main{
         padding-top: 25%;

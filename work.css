@@ -28,7 +28,8 @@ a {
 header {
     padding: 2%;
     display: flex;
-gap: 35%;
+/* gap: 35%; */
+gap:50%;
 position: fixed;
 background-color: #0F0F0F;
 width: 100%;
