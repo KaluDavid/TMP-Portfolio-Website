@@ -1,152 +1,132 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
-body{
-    background-color: #0F0F0F;
-    background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
-    background-position: top center;
-    margin: 0;
-    padding: 0;
-    font-family: Montserrat;
-width: 100%;
-overflow-x: hidden;
+body {
+  background-color: #0f0f0f;
+  background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
+  background-position: top center;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  width: 100%;
+  overflow-x: hidden;
 }
-
-
 
 button,
 a {
-    cursor: pointer;
-    text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* HEADER */
 
 header {
-    padding: 25px;
-    display: flex;
-/* gap: 35%; */
-gap:50%;
-position: fixed;
-background-color: #0F0F0F;
-width: 100%;
-animation: 0.6s ease-out 0s 1 slideInLeft;
-align-items: center;
+  padding: 25px;
+  display: flex;
+  /* gap: 35%; */
+  gap: 50%;
+  position: fixed;
+  background-color: #0f0f0f;
+  width: 100%;
+  animation: 0.6s ease-out 0s 1 slideInLeft;
+  align-items: center;
 }
+
 @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-}
-header p{
-    font-family: 'Dancing Script', cursive;
-    color: white;
-    opacity: 0.5;
-    font-size: 15px;
-    line-height: 15px;
-    font-weight:200;
-    /* padding-left: 3rem; */
-    padding-top: 15px;
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
-
+header p {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  opacity: 0.5;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 200;
+  /* padding-left: 3rem; */
+  padding-top: 15px;
+}
 
 .icon {
-    display: none;
-    color: white;
-    font-size: 30px;
-    flex-wrap: wrap;
+  display: none;
+  color: white;
+  font-size: 30px;
+  flex-wrap: wrap;
 }
 
-ol{
-    color: aqua;
-    list-style-type: none;
-    /* display: flex; */
-
+ol {
+  color: aqua;
+  list-style-type: none;
+  /* display: flex; */
 }
-li{
-display: flex;
-gap:10%;
-font-weight: 600;
 
+li {
+  display: flex;
+  gap: 10%;
+  font-weight: 600;
 }
+
 .nav {
-    display: flex;
-    gap: 80px;
-
+  display: flex;
+  gap: 80px;
 }
 
-
-
-.hamburger{
-    display: none;
-
+.hamburger {
+  display: none;
 }
+
 nav {
-    display: flex;
-    gap: 3px;
-    padding-top: 10px;
-    padding-left: 50px;
-    
+  display: flex;
+  gap: 3px;
+  padding-top: 10px;
+  padding-left: 50px;
 }
 
 .nav a {
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 500;
-    color: white;
-    cursor: pointer;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
 }
-
-
 
 /* main */
-main{
-    /* width: 50%; */
-    margin: 0 5%;
-    padding-top: 12%;
-    color: rgb(179, 176, 176);
-   
-
+main {
+  margin: 0 5%;
+  padding-top: 12%;
+  color: rgb(179, 176, 176);
 
 }
 
-
-.first{
-animation: 1.5s ease-out 0s 1 slideInLeft;
-
+.first {
+  animation: 1.5s ease-out 0s 1 slideInLeft;
 }
+
 @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
-
-
-.first h2{
-    font-size: 30px;
-    
+.first h2 {
+  font-size: 30px;
 }
-    .first h1{
-        font-size: 70px;
-        color: white;
-        
-    }
 
-
-
-
-
+.first h1 {
+  font-size: 70px;
+  color: white;
+}
 
 /* 
 .dhave img{
@@ -163,234 +143,233 @@ border: 3px solid #118080;
 
 }  */
 
- .first  p{
-    line-height: 25px;
-
- }
-
-.first button{
-    background-color: #118080;
-    width: 30%;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    color: white;
-    font-size: 17px;
- height: 3rem; 
- margin-top: 30px; 
+.two-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+.first p {
+  line-height: 25px;
 }
 
-.first button:hover{
-    background-color: black;
-    border:  1px solid #118080;
-    color: #118080;
+.first button {
+  background-color: #118080;
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 17px;
+  height: 3rem;
+  margin-top: 30px;
 }
 
+.first button:hover {
+  background-color: black;
+  border: 1px solid #118080;
+  color: #118080;
+}
 
 /* works */
-.works{
-    width: auto;
-    
+.works {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* secondsection */
-
-
-.secondsection{
-    margin-top: 30%;
+.second {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
 }
-.second{
-    display: flex;
 
-}
-.second p{
-    color: white;
-    font-size: 40px;
-    font-family: 'halant';
-    font-weight: 600;
-
+.second p {
+  color: white;
+  font-size: 40px;
+  font-family: "halant";
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .second hr {
-    margin-top: 35px;
   border: none;
-    width: 70%;
-    background-color: aqua;
-    height: 2px;
+  width: 100%;
+  background-color: aqua;
+  height: 2px;
 }
 
-
-.github button{
-    background-color: black;
-    width: 30rem;
-    padding: 10px;
-    border: 1px solid #118080;
-    border-radius: 3px;
-    color: white;
-    font-size: 17px;
- /* height: 3rem;  */
- margin-top: 30px; 
- 
+.github button {
+  background-color: black;
+  width: 20rem;
+  padding: 10px;
+  border: 1px solid #118080;
+  border-radius: 3px;
+  color: white;
+  font-size: 17px;
+  /* height: 3rem;  */
+  margin-top: 30px;
 }
 
-.github button:hover{
-    background-color: #118080;
-    color: white;
+.github button:hover {
+  background-color: #118080;
+  color: white;
 }
 
-.github{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-right: 20%;
+.github {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
-.flex{
- 
-    
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    border-radius: 5px;
-margin-bottom: 30px;
+.flex2 {
+  gap: 40px;
+  display: flex;
+  align-items: center;
 }
-.flex2{
-    gap: 40px;
-}
+
 .home {
-    color: rgb(179, 176, 176);
-    background-color: black;
-    background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
-background-repeat: no-repeat;
-background-size: cover;
- padding: 50px;
- /* margin: 30px; */
- 
- border-radius: 5px;
- border: 1px solid aqua;
- width: 50%;
- height: 25rem;
-}
-.home button{
-  
-    background-color: black;
-    border:  1px solid #118080;
-    width: 20%;
-    padding: 10px;
-    padding-right: 20px;
-    border-radius: 3px;
-    color: rgb(179, 176, 176);
-    font-size: 17px;
- height: 3rem; 
- width: 50%;
- margin-top: 30px; 
-}
-.home h2{
-    color: whitesmoke;
-}
-.home button:hover{
-    background-color: #118080;
-    color: white;
+  color: rgb(179, 176, 176);
+  background-color: black;
+  background-image: url(https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  /* margin: 30px; */
+  border-radius: 5px;
+  border: 1px solid aqua;
+  width: 50%;
+  height: 65vh;
 }
 
-.home p{
-    line-height: 25px;
-    
-}
-.home h2{
-    line-height: 40px;
+.home button {
+  background-color: black;
+  border: 1px solid #118080;
+  width: 20%;
+  padding: 10px;
+  padding-right: 20px;
+  border-radius: 3px;
+  color: rgb(179, 176, 176);
+  font-size: 17px;
+  height: 3rem;
+  width: 50%;
+  margin-top: 30px;
 }
 
+.home h2 {
+  color: whitesmoke;
+  line-height: 25px;
+}
 
+.home button:hover {
+  background-color: #118080;
+  color: white;
+}
+
+.home p {
+  line-height: 25px;
+}
+
+.home h2 {
+  line-height: 40px;
+}
 
 #typing {
+  width: 0ch;
+  color: white;
+  font-family: "dancing script";
+  font-size: 30px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(22) 1s infinite alternate;
+}
 
-    margin-top: 10%;
-        width: 0ch;
-        color: white; 
-        font-family:'dancing script';
-        font-size: 30px;
-        overflow-x: hidden;
-        white-space: nowrap;
-        animation: typing 2s steps(22) 1s infinite alternate;
-    }
-    
-    
-    @keyframes typing {
-        from {
-            width: 0ch;
-        }
-        to {
-            width: 23ch;
-        }
-    }
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
 
-
-
-
-
+  to {
+    width: 23ch;
+  }
+}
 
 /* FOOTER */
-footer{
-    background-color: #0F0F0F;
-    height: 20rem;
+footer {
+  background-color: #0f0f0f;
+  height: 20rem;
+  padding-top: 2%;
 }
-.subfooter{
 
-    margin: 0 5%;
-    color: rgb(179, 176, 176);
+.subfooter {
+  margin: 0 5%;
+  color: rgb(179, 176, 176);
 }
-.subfooter h1{
+
+.subfooter h1 {
   font-size: 35px;
   padding-top: 30px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.subfooter p{
-    font-size: 20px;
-}
-footer .mail{
-    color: aqua;
-    text-decoration: none;
-}
-footer .links{
-
-    color: #C8CADA;
-    font-size: 35px;
-  
-padding: 10px;
-}
-.link img{
- width:  45px;
- 
-
+.subfooter p {
+  font-size: 20px;
 }
 
-    /* letter-spacing: 10px; */
-
-footer .twitter{
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    align-items: center;
-   
+footer .mail {
+  color: aqua;
+  text-decoration: none;
 }
-footer .lword{
-    text-align: center;
-    color: rgb(179, 176, 176);
-    font-size: 20px;
+
+footer .links {
+  color: #c8cada;
+  font-size: 35px;
+
+  padding: 10px;
 }
-footer hr{
-    height: 1px;
-    background-color: aqua;
-    width: auto;
-    }
-    
 
+.link img {
+  width: 45px;
+}
 
+/* letter-spacing: 10px; */
 
+footer .twitter {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer .lword {
+  text-align: center;
+  color: rgb(179, 176, 176);
+  font-size: 20px;
+}
+
+.lastdiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 2%;
+}
+footer hr {
+  height: 1px;
+  background-color: aqua;
+  width: 100%;
+}
 
 /* RESPONSIVENESS */
-
 
 /* @media screen and (max-width:1165px) and (min-width:1095px) {
     header{
@@ -400,296 +379,246 @@ footer hr{
   
   }
   */
- /* screen 1085 */
- @media screen and (max-width:1095px) and (min-width:766px) {
-     /* header{
-         /* gap: 20%; *
-gap:45%;
-        }  */
-        
-        /* main{
-         padding-top: 20%;
-        } */
- 
-    .second hr{
-        width: 60%;
-    }
- }
- @media screen and (max-width:1095px) {
-    header{
-        gap: 42%;
-    }
- }
-@media screen and (max-width:995px) {
-    .home h2{
-font-size: 20px;
-    }
 
-    .home button{
-        width: 75%;
-    }
-
-
+@media screen and (max-width: 1095px) {
+  header {
+    gap: 42%;
+  }
 }
-@media screen and (max-width:951px) {
-    header{
-        gap:35%;
-    }
+
+@media screen and (max-width: 995px) {
+  .home h2 {
+    font-size: 20px;
+  }
+
+  .home button {
+    width: 75%;
+  }
 }
-@media screen and (max-width:885px) {
-    main{
-        padding-top: 25%;
-    }
+
+@media screen and (max-width: 951px) {
+  header {
+    gap: 35%;
+  }
 }
-@media screen and (max-width:849px) {
-    header{
-        gap:30%
-    }
+
+@media screen and (max-width: 885px) {
+  main {
+    padding-top: 25%;
+  }
 }
-/* screen */
-@media screen and (max-width:793px) {
-    .second hr{
-        width: 50%;
-    }
+
+@media screen and (max-width: 849px) {
+  header {
+    gap: 30%;
+  }
 }
-@media screen and (max-width:766px) {
-    
 
+@media screen and (max-width: 766px) {
+  .nav {
+    display: none;
+  }
 
-    .nav {
-        display: none;
-       
-
-    }   
-
-    header{
-        gap: 70%;
-        overflow-x: hidden;
-    }
-
-    .icon {
-        display: block;
-  
-    }
-
-footer{
-    width:auto;
+  header {
+    gap: 70%;
     overflow-x: hidden;
-}
-    /* hamburger menu */
-    nav{
-        position: relative;
-        z-index: 1;
-      
-        
-    }
-        
-    .hamburger{
-        position: fixed;
-        background-color: #0F0F0F;
-        background-image: url('https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png');
+  }
 
-     background-repeat: repeat;
-        height: 100%;  
-        left: 70px;
-        width: 90%;
+  .icon {
+    display: block;
+  }
+
+  footer {
+    width: auto;
+    overflow-x: hidden;
+  }
+
+  /* hamburger menu */
+  nav {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hamburger {
+    position: fixed;
+    background-color: #0f0f0f;
+    background-image: url("https://josephkalu.com/wp-content/uploads/2022/05/Group-18.png");
+
+    background-repeat: repeat;
+    height: 100%;
+    left: 70px;
+    width: 90%;
     top: 80px;
- 
-    
-    }
-    
-      
-    .hamburger ol {
-        list-style-type: none;
-    
+  }
+
+  .hamburger ol {
+    list-style-type: none;
+
     text-align: left;
+  }
 
-    }
-    
+  .hamburger ol li {
+    padding: 30px;
+    text-align: left;
+  }
 
-    .hamburger ol li {
-        padding: 30px;
-        text-align: left;
-    }
-   
-    
-    
-    .hamburger ol li a {
-        text-decoration: none;
-        color: white;
-        cursor: pointer;
-      text-align: left;
-        font-weight: 600;
+  .hamburger ol li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    font-weight: 600;
 
     font-size: 20px;
-    
-    }
-    
+  }
+
+  /* 
     .visible {
         display: block;
         padding: 10px;
-    
-    
-    }
-      
-    
 
-    /* main */
-    main{
-        margin: 0 5%;
-        width: auto;
-        overflow-x: hidden;
-        padding-top: 20%;
-    }
-    
- 
-    .first button{
-        width: 30%;
-    }
-    .first h1{
-font-size: 50px;
-    }
 
-    .first div p{
-        width: auto;
-    }
+    } */
 
-.flex2{
+  /* main */
+  main {
+    margin: 0 5%;
+    width: auto;
+    overflow-x: hidden;
+    padding-top: 20%;
+  }
+
+  .first button {
+    width: 30%;
+  }
+
+  .first h1 {
+    font-size: 50px;
+  }
+
+  .first div p {
+    width: auto;
+  }
+
+  .flex2 {
     flex-direction: column;
     overflow-x: hidden;
   }
 
-
-.home{
+  .home {
     width: auto;
     margin-bottom: 2%;
-}
+  }
 
-.github button{
+  .github button {
     width: 20rem;
-}
-    .second p{
-        font-size: 30px;
-    }
-    .second hr{
-        width: 55%;
-        /* margin-left: 10%; */
-        margin-top: 20px;
-        overflow-x: hidden;
-    }
+  }
 
-  
-
-
-
-#typing{
-    overflow: hidden;
-}
-
-.first button{
-    width: 40%;
-}
-
-.home button{
-width: 30%;
-}
-}
-
-
-@media screen and (max-width:721px) {
-    .home button{
-        width: 80%;
-    }
-}
-@media screen and (max-width:646px) {
-    .dhave img {
-        float: none;
- width: 80%;
- height: 80%;
-
-margin: auto;
-padding: auto;
-display: block;
-object-fit: contain;    
-}
-    .first h2{
-        padding-top: 5%;
-    }
-}
-@media screen and (max-width:598px) {
-    .second hr{
-        width: 40%;
-    }
-
-    header{
-        gap: 65%;
-    }
-}
-@media screen and (max-width:534px) and (min-width:456px) {
-    
-    .second :hr{
-        display: none;
-    }
- }
-
-@media screen and (max-width:500px) {
-    main{
-padding-top: 30%;
-    }
-#typing{
+  .second p {
     font-size: 30px;
+  }
+
+  .first button {
+    width: 40%;
+  }
+
+  .home button {
+    width: 30%;
+  }
 }
-header{
+
+@media screen and (max-width: 721px) {
+  .home button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  .dhave img {
+    float: none;
+    width: 80%;
+    height: 80%;
+
+    margin: auto;
+    padding: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .first h2 {
+    padding-top: 5%;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  header {
+    gap: 65%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    padding-top: 30%;
+  }
+
+  #typing {
+    font-size: 30px;
+  }
+
+  header {
     gap: 60%;
-}
+  }
 }
 
-@media screen and (max-width:410px) {
-   
-   header{
+@media screen and (max-width: 410px) {
+  header {
     gap: 55%;
-   }
-    .second hr{
-        display: none;
-    }
+  }
 
-    .first button{
-width: 50%;
-    }
+  .second hr {
+    display: none;
+  }
 
-    .home button{
-        width: 90%;
-    }
+  .first button {
+    width: 50%;
+  }
 
-    .github button{
+  .home button {
+    width: 90%;
+  }
 
-        width: 70%;
-    }
-    #typing{
-        font-size: 20px;
-    }
-      
-   
+  .github button {
+    width: 70%;
+  }
+
+  #typing {
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width:410px) {
-    .github button{
-
-        width: 15rem;
-    }
+@media screen and (max-width: 410px) {
+  .github button {
+    width: 15rem;
+  }
 }
 
-@media screen and (max-width:378px) {
-    header{
-        gap: 50%;
-    }
+@media screen and (max-width: 378px) {
+  header {
+    gap: 50%;
+  }
 }
 
-@media screen and (max-width:320px) {
-    header{
-        gap: 40%;
-    }
-    .home button{
-      margin: 0rem;
-    }
+@media screen and (max-width: 320px) {
+  header {
+    gap: 40%;
+  }
+
+  .home button {
+    margin: 0rem;
+  }
+
+  .icon {
+    display: block;
+    color: white;
+  }
 }
