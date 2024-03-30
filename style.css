@@ -22,10 +22,12 @@ a {
 /* HEADER */
 
 header {
-  padding: 25px;
+  padding: 10px 75px 10px 35px;
   display: flex;
   /* gap: 35%; */
-  gap: 50%;
+  /* gap: 50%; */
+  top: 0;
+  justify-content: space-between;
   position: fixed;
   background-color: #0f0f0f;
   width: 100%;
@@ -50,8 +52,6 @@ header p {
   font-size: 15px;
   line-height: 15px;
   font-weight: 200;
-  /* padding-left: 3rem; */
-  padding-top: 15px;
 }
 
 .icon {
@@ -102,7 +102,6 @@ main {
   margin: 0 5%;
   padding-top: 12%;
   color: rgb(179, 176, 176);
-
 }
 
 .first {
@@ -371,18 +370,15 @@ footer hr {
 
 /* RESPONSIVENESS */
 
-/* @media screen and (max-width:1165px) and (min-width:1095px) {
-    header{
-     gap: 30%;
-    }
-    
-  
+@media screen and (max-width: 1280px) {
+  .home {
+    height: 50vh;
   }
-  */
+}
 
-@media screen and (max-width: 1095px) {
-  header {
-    gap: 42%;
+@media screen and (max-width: 1114px) {
+  .home {
+    height: 55vh;
   }
 }
 
@@ -396,32 +392,21 @@ footer hr {
   }
 }
 
-@media screen and (max-width: 951px) {
-  header {
-    gap: 35%;
-  }
-}
-
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 884px) {
   main {
-    padding-top: 25%;
+    padding-top: 20%;
+  }
+  .home {
+    height: 40vh;
   }
 }
 
-@media screen and (max-width: 849px) {
+@media screen and (max-width: 768px) {
   header {
-    gap: 30%;
+    padding: 10px 75px 10px 35px;
   }
-}
-
-@media screen and (max-width: 766px) {
   .nav {
     display: none;
-  }
-
-  header {
-    gap: 70%;
-    overflow-x: hidden;
   }
 
   .icon {
@@ -430,7 +415,6 @@ footer hr {
 
   footer {
     width: auto;
-    overflow-x: hidden;
   }
 
   /* hamburger menu */
@@ -485,7 +469,7 @@ footer hr {
     margin: 0 5%;
     width: auto;
     overflow-x: hidden;
-    padding-top: 20%;
+    padding-top: 15%;
   }
 
   .first button {
@@ -502,7 +486,6 @@ footer hr {
 
   .flex2 {
     flex-direction: column;
-    overflow-x: hidden;
   }
 
   .home {
@@ -534,25 +517,8 @@ footer hr {
 }
 
 @media screen and (max-width: 646px) {
-  .dhave img {
-    float: none;
-    width: 80%;
-    height: 80%;
-
-    margin: auto;
-    padding: auto;
-    display: block;
-    object-fit: contain;
-  }
-
   .first h2 {
     padding-top: 5%;
-  }
-}
-
-@media screen and (max-width: 598px) {
-  header {
-    gap: 65%;
   }
 }
 
@@ -564,17 +530,9 @@ footer hr {
   #typing {
     font-size: 30px;
   }
-
-  header {
-    gap: 60%;
-  }
 }
 
 @media screen and (max-width: 410px) {
-  header {
-    gap: 55%;
-  }
-
   .second hr {
     display: none;
   }
@@ -595,24 +553,33 @@ footer hr {
     font-size: 20px;
   }
 }
-
-@media screen and (max-width: 410px) {
-  .github button {
-    width: 15rem;
-  }
-}
-
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 430px) {
   header {
-    gap: 50%;
+    padding: 10px;
+    top: 0;
+  }
+  .home {
+    height: 50vh;
+  }
+  .github button {
+    padding: 15px;
+  }
+  main {
+    margin-bottom: 5%;
+  }
+  .gMail {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  #typing {
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  header {
-    gap: 40%;
-  }
-
   .home button {
     margin: 0rem;
   }
