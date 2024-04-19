@@ -22,10 +22,8 @@ a {
 /* HEADER */
 
 header {
-  padding: 10px 75px 10px 35px;
+  padding: 20px 50px;
   display: flex;
-  /* gap: 35%; */
-  /* gap: 50%; */
   top: 0;
   justify-content: space-between;
   position: fixed;
@@ -100,7 +98,7 @@ nav {
 /* main */
 main {
   margin: 0 5%;
-  padding-top: 12%;
+  padding-top: 18%;
   color: rgb(179, 176, 176);
 }
 
@@ -202,14 +200,12 @@ border: 3px solid #118080;
 
 .github button {
   background-color: black;
-  width: 20rem;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 30px;
   border: 1px solid #118080;
   border-radius: 3px;
   color: white;
   font-size: 17px;
-  /* height: 3rem;  */
-  margin-top: 30px;
 }
 
 .github button:hover {
@@ -228,6 +224,7 @@ border: 3px solid #118080;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 }
 
 .flex2 {
@@ -243,11 +240,13 @@ border: 3px solid #118080;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
-  /* margin: 30px; */
   border-radius: 5px;
   border: 1px solid aqua;
   width: 50%;
   height: 65vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
 }
 
 .home button {
@@ -304,7 +303,6 @@ border: 3px solid #118080;
 
 /* FOOTER */
 footer {
-  background-color: #0f0f0f;
   height: 20rem;
   padding-top: 2%;
 }
