@@ -22,7 +22,7 @@ a {
 /* HEADER */
 
 header {
-  padding: 20px 50px;
+  padding: 20px 70px 20px 50px;
   display: flex;
   top: 0;
   justify-content: space-between;
@@ -31,6 +31,7 @@ header {
   width: 100%;
   animation: 0.6s ease-out 0s 1 slideInLeft;
   align-items: center;
+  z-index: 1;
 }
 
 @keyframes slideInLeft {
@@ -47,7 +48,7 @@ header p {
   font-family: "Dancing Script", cursive;
   color: white;
   opacity: 0.5;
-  font-size: 15px;
+  font-size: 30px;
   line-height: 15px;
   font-weight: 200;
 }
@@ -104,6 +105,9 @@ main {
 
 .first {
   animation: 1.5s ease-out 0s 1 slideInLeft;
+  display: flex;
+  gap: 5%;
+  align-items: center;
 }
 
 @keyframes slideInLeft {
@@ -125,20 +129,12 @@ main {
   color: white;
 }
 
-/* 
-.dhave img{
-    float: left;
-    margin-right: 2%;
-    margin-bottom: 3%;
-border: 3px solid #118080;
-    height: 35rem;
-    object-fit: contain;  
+.dhave {
+  border: 3px solid #118080;
+  height: 35rem;
+  object-fit: contain;
+  /* mix-blend-mode: luminosity; */
 }
-
-.dhave img:hover{
-    mix-blend-mode:luminosity;
-
-}  */
 
 .two-sections {
   display: flex;
@@ -152,7 +148,7 @@ border: 3px solid #118080;
 
 .first button {
   background-color: #118080;
-  width: 30%;
+  width: 40%;
   padding: 10px;
   border: none;
   border-radius: 3px;
@@ -201,7 +197,7 @@ border: 3px solid #118080;
 .github button {
   background-color: black;
   width: 100%;
-  padding: 10px 30px;
+  padding: 18px 30px;
   border: 1px solid #118080;
   border-radius: 3px;
   color: white;
@@ -243,23 +239,20 @@ border: 3px solid #118080;
   border-radius: 5px;
   border: 1px solid aqua;
   width: 50%;
-  height: 65vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20%;
+  gap: 90px;
 }
 
 .home button {
   background-color: black;
   border: 1px solid #118080;
-  width: 20%;
-  padding: 10px;
-  padding-right: 20px;
+  width: 100%;
+  padding: 18px 30px;
   border-radius: 3px;
   color: rgb(179, 176, 176);
   font-size: 17px;
-  height: 3rem;
-  width: 50%;
   margin-top: 30px;
 }
 
@@ -368,34 +361,22 @@ footer hr {
 
 /* RESPONSIVENESS */
 
-@media screen and (max-width: 1280px) {
-  .home {
-    height: 50vh;
-  }
-}
-
-@media screen and (max-width: 1114px) {
-  .home {
-    height: 55vh;
-  }
-}
-
 @media screen and (max-width: 995px) {
   .home h2 {
     font-size: 20px;
   }
-
-  .home button {
-    width: 75%;
+}
+@media screen and (max-width: 928px) {
+  .first button {
+    width: 60%;
+  }
+  .github button {
+    width: 25rem;
   }
 }
-
 @media screen and (max-width: 884px) {
   main {
     padding-top: 20%;
-  }
-  .home {
-    height: 40vh;
   }
 }
 
@@ -428,9 +409,11 @@ footer hr {
 
     background-repeat: repeat;
     height: 100%;
-    left: 70px;
+    /* left: 70px; */
+    right: 0;
     width: 90%;
-    top: 80px;
+    top: 120px;
+    z-index: 1;
   }
 
   .hamburger ol {
@@ -466,8 +449,7 @@ footer hr {
   main {
     margin: 0 5%;
     width: auto;
-    overflow-x: hidden;
-    padding-top: 15%;
+    padding-top: 25%;
   }
 
   .first button {
@@ -491,26 +473,23 @@ footer hr {
     margin-bottom: 2%;
   }
 
-  .github button {
-    width: 20rem;
-  }
-
   .second p {
     font-size: 30px;
   }
 
   .first button {
-    width: 40%;
-  }
-
-  .home button {
-    width: 30%;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 721px) {
-  .home button {
-    width: 80%;
+@media screen and (max-width: 686px) {
+  .first {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .first button {
+    width: 60%;
   }
 }
 
@@ -519,7 +498,21 @@ footer hr {
     padding-top: 5%;
   }
 }
+@media screen and (max-width: 646px) {
+  .first h2 {
+    padding-top: 5%;
+  }
+}
 
+@media screen and (max-width: 520px) {
+  .home button {
+    width: 100%;
+  }
+  .github button {
+    width: 100%;
+    padding: 18px 80px;
+  }
+}
 @media screen and (max-width: 500px) {
   main {
     padding-top: 30%;
@@ -530,41 +523,14 @@ footer hr {
   }
 }
 
-@media screen and (max-width: 410px) {
-  .second hr {
-    display: none;
-  }
-
-  .first button {
-    width: 50%;
-  }
-
-  .home button {
-    width: 90%;
-  }
-
-  .github button {
-    width: 70%;
-  }
-
-  #typing {
-    font-size: 20px;
-  }
-}
 @media screen and (max-width: 430px) {
   header {
-    padding: 10px;
-    top: 0;
+    padding: 0px 30px;
   }
-  .home {
-    height: 50vh;
+  .hamburger {
+    top: 100px;
   }
-  .github button {
-    padding: 15px;
-  }
-  main {
-    margin-bottom: 5%;
-  }
+
   .gMail {
     display: flex;
     flex-direction: column;
@@ -574,16 +540,67 @@ footer hr {
     padding: 0;
     margin: 0;
     line-height: 25px;
+    font-size: 23px;
+  }
+
+  .home {
+    padding: 30px;
+  }
+  .first button {
+    width: 70%;
+  }
+  .github button {
+    padding: 18px 50px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  header p {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    line-height: 8px;
+    font-size: 20px;
+  }
+  .icon {
+    font-size: 25px;
+  }
+  header {
+    padding: 10px 30px;
+  }
+  .hamburger {
+    top: 70px;
+  }
+  .second hr {
+    display: none;
+  }
+
+  .first button {
+    width: 80%;
+  }
+  .dhave {
+    height: 30rem;
+    mix-blend-mode: luminosity;
+  }
+  .first div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    line-height: 0px;
+  }
+  .first h1 {
+    font-size: 30px;
+  }
+  .first h2 {
+    font-size: 20px;
+  }
+  #typing {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .home button {
-    margin: 0rem;
-  }
-
-  .icon {
-    display: block;
-    color: white;
+  .github button {
+    padding: 18px 30px;
   }
 }
