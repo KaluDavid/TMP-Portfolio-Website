@@ -580,7 +580,7 @@ footer hr {
   }
   .dhave {
     height: 30rem;
-    mix-blend-mode: luminosity;
+    /* mix-blend-mode: luminosity; */
   }
   .first div {
     display: flex;
